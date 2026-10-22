@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a personalized mobile massage with Precision Massage Studio in Cocoa, Florida.">
+
+  <title>Book a Massage | Precision Massage Studio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Existing website styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .booking-intro {
+      text-align: center;
+      background: #f8f5ef;
+      padding: 85px 20px 65px;
+    }
+
+    .booking-intro h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      margin: 16px 0 24px;
+      font-weight: 500;
+    }
+
+    .booking-intro h1 span {
+      color: #aa9274;
+    }
+
+    .booking-intro p {
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.9;
+      color: #6e6a63;
+    }
+
+    .booking-services {
+      background: #f8f5ef;
+      padding: 25px 0 90px;
+    }
+
+    .booking-services .service-card {
+      min-height: 280px;
+    }
+
+    .booking-services .service-card h3 {
+      margin-top: 34px;
+    }
+
+    .booking-services .service-price {
+      display: block;
+      margin: 12px 0;
+      font-size: 28px;
+    }
+
+    .square-section {
+      background: #e9e0d3;
+      padding: 85px 20px;
+    }
+
+    .square-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .square-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .square-heading h2 {
+      font-size: clamp(36px, 5vw, 55px);
+      margin-bottom: 18px;
+    }
+
+    .square-heading p {
+      color: #6e6a63;
+      line-height: 1.8;
+    }
+
+    .square-widget {
+      background: #fffdf9;
+      border: 1px solid #dcd5c9;
+      padding: 30px;
+      min-height: 250px;
+      overflow: auto;
+    }
+
+    .travel-policy {
+      background: #f8f5ef;
+      padding: 85px 20px;
+    }
+
+    .travel-policy-inner {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .travel-policy h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      margin-bottom: 25px;
+    }
+
+    .travel-policy p {
+      line-height: 1.9;
+      color: #6e6a63;
+      margin-bottom: 20px;
+    }
+
+    .policy-divider {
+      border: 0;
+      border-top: 1px solid #dcd5c9;
+      margin: 30px 0;
+    }
+
+    @media (max-width: 650px) {
+      .booking-intro {
+        padding: 65px 20px 45px;
+      }
+
+      .booking-services {
+        padding-bottom: 60px;
+      }
+
+      .square-section,
+      .travel-policy {
+        padding: 60px 15px;
+      }
+
+      .square-widget {
+        padding: 12px;
+      }
+    }
+  </style>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="shell nav-layout">
+
+      <a href="index.html" class="brand">
+        <span class="brand-symbol">✳</span>
+        <span>
+          PRECISION
+          <span class="brand-sub">MASSAGE STUDIO</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Open navigation"
+              aria-expanded="false"
+              aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="#square-calendar"
+           class="button button-dark nav-book">
+          Book Now ↗
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INTRODUCTION -->
+    <section class="booking-intro">
+
+      <p class="section-label">
+        PERSONALIZED MOBILE MASSAGE
+      </p>
+
+      <h1>
+        Your Time.<br>
+        <span>Your Treatment.</span>
+      </h1>
+
+      <p>
+        Massage should be as individual as you are.
+        Whether you're seeking focused attention
+        on specific areas of tension or a relaxing
+        full-body experience, every session is
+        tailored to your needs.
+      </p>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="booking-services" id="services">
+
+      <div class="shell">
+
+        <p class="section-label">
+          CHOOSE YOUR EXPERIENCE
+        </p>
+
+        <div class="service-grid">
+
+          <!-- 60 MINUTES -->
+          <article class="service-card">
+
+            <div class="service-top">
+              <span>PERSONALIZED</span>
+              <span>60 MIN</span>
+            </div>
+
+            <h3>60 Minutes</h3>
+
+            <span class="service-price">$115</span>
+
+            <p>
+              A customized massage focused on what
+              matters most to you. Choose specific
+              areas of tension or a full-body session.
+            </p>
+
+            <a href="#square-calendar"
+               class="service-link">
+              Book This Session →
+            </a>
+
+          </article>
+
+          <!-- 90 MINUTES -->
+          <article class="service-card featured">
+
+            <div class="service-top">
+              <span>SIGNATURE</span>
+              <span>90 MIN</span>
+            </div>
+
+            <h3>90 Minutes</h3>
+
+            <span class="service-price">$155</span>
+
+            <p>
+              Additional time for detailed work on
+              multiple areas of tension or an
+              extended full-body massage.
+            </p>
+
+            <a href="#square-calendar"
+               class="service-link">
+              Book This Session →
+            </a>
+
+          </article>
+
+          <!-- 120 MINUTES -->
+          <article class="service-card">
+
+            <div class="service-top">
+              <span>EXTENDED</span>
+              <span>120 MIN</span>
+            </div>
+
+            <h3>120 Minutes</h3>
+
+            <span class="service-price">$195</span>
+
+            <p>
+              An extended therapeutic experience
+              offering additional time for
+              personalized, focused bodywork.
+            </p>
+
+            <a href="#square-calendar"
+               class="service-link">
+              Book This Session →
+            </a>
+
+          </article>
+
+        </div>
+
+        <p class="service-note">
+          Travel included within 20 miles of Cocoa,
+          Florida. Deep-pressure upgrade +$30.
+          Other standard enhancements included.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- SQUARE BOOKING -->
+    <section class="square-section" id="square-calendar">
+
+      <div class="square-container">
+
+        <div class="square-heading">
+
+          <p class="section-label">
+            RESERVE YOUR APPOINTMENT
+          </p>
+
+          <h2>Book Your Massage</h2>
+
+          <p>
+            Select your preferred massage service,
+            choose an available date and time,
+            and submit your appointment request.
+          </p>
+
+        </div>
+
+        <div class="square-widget">
+
+          <!-- Start Square Appointments Embed Code -->
+          <script src="https://square.site/appointments/buyer/widget/5he5i5y0tlb6a5/LH2405HXTA93M.js"></script>
+          <!-- End Square Appointments Embed Code -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TRAVEL POLICY -->
+    <section class="travel-policy">
+
+      <div class="travel-policy-inner">
+
+        <p class="section-label">
+          MOBILE MASSAGE INFORMATION
+        </p>
+
+        <h2>
+          Professional Massage.<br>
+          Your Location.
+        </h2>
+
+        <p>
+          Precision Massage Studio provides
+          personalized mobile massage services
+          within a 20-mile radius of Cocoa, Florida.
+        </p>
+
+        <p>
+          Travel is included in your massage price.
+          No additional travel fee applies within
+          our designated service area.
+        </p>
+
+        <hr class="policy-divider">
+
+        <p>
+          <strong>Before your appointment:</strong>
+          Please provide the complete service
+          address and ensure there is adequate
+          indoor space for a professional massage
+          table and equipment.
+        </p>
+
+        <p>
+          Appointment requests are reviewed before
+          confirmation to verify the service
+          location and availability.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+
+    <div class="shell footer-main">
+
+      <div>
+
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-symbol">✳</span>
+          <span>
+            PRECISION
+            <span class="brand-sub">MASSAGE STUDIO</span>
+          </span>
+        </a>
+
+        <p>
+          Intentional, personalized massage therapy.
+          <br>
+          Cocoa, Florida.
+        </p>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="section-label">
+          SERVICE AREA
+        </p>
+
+        <p>
+          Mobile massage within 20 miles of
+          Cocoa, Florida.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>
+        © <span id="year">2026</span>
+        Precision Massage Studio
+      </span>
+      <span>Designed with intention.</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>
